@@ -5,20 +5,20 @@
 class NotionCli < Formula
   desc "Notion CLI for exporting and managing Notion content"
   homepage "https://github.com/inforix/notion-cli"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/inforix/notion-cli/releases/download/v0.2.0/notion_0.2.0_darwin_amd64.tar.gz"
-      sha256 "913e0823b872bbbab415d4bdb104c0190fab991c0b45d59d16f2eed38e2562a9"
+      url "https://github.com/inforix/notion-cli/releases/download/v0.3.0/notion_0.3.0_darwin_amd64.tar.gz"
+      sha256 "3b1f4498e23dcd6ac790ebaa2cb7bae759850534448c01bc8683bb3cc175c5e2"
 
       define_method(:install) do
         bin.install "notion"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/inforix/notion-cli/releases/download/v0.2.0/notion_0.2.0_darwin_arm64.tar.gz"
-      sha256 "40192de90a0234502f1e41b5622308f7e4c90562cba68d1de93516094de7fcda"
+      url "https://github.com/inforix/notion-cli/releases/download/v0.3.0/notion_0.3.0_darwin_arm64.tar.gz"
+      sha256 "cbcdde764ee7a170fdd6031eff8a612e27c5de44232c0daf27c074d6072cae36"
 
       define_method(:install) do
         bin.install "notion"
@@ -28,15 +28,15 @@ class NotionCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inforix/notion-cli/releases/download/v0.2.0/notion_0.2.0_linux_amd64.tar.gz"
-      sha256 "26d7d2d9e6cf098ec5afa23ca4a5e255d4a05d184ef6500d5adc12c872091abc"
+      url "https://github.com/inforix/notion-cli/releases/download/v0.3.0/notion_0.3.0_linux_amd64.tar.gz"
+      sha256 "a1cd98def81a02c27b73867f71abd68cf022cf0ae0a6689983a8715ee22ac92b"
       define_method(:install) do
         bin.install "notion"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inforix/notion-cli/releases/download/v0.2.0/notion_0.2.0_linux_arm64.tar.gz"
-      sha256 "c1e65574d13d20a67847ca9281ceea7a54f68bf37a82f6ba1a58c2c8bcf0e8b9"
+      url "https://github.com/inforix/notion-cli/releases/download/v0.3.0/notion_0.3.0_linux_arm64.tar.gz"
+      sha256 "4e04477b2cef6b0b9cd372860bf285fddb513694bce6472614b5c278635ff92f"
       define_method(:install) do
         bin.install "notion"
       end
